@@ -334,7 +334,6 @@
         
         if (end != scrollView.contentOffset.y) {
             self.originDelegate = scrollView.delegate;
-            scrollView.delegate = self;
             
             /**
              * UITableView 设置 contentOffset 时会错位，使用 dispatch_main_queue 可以解决
